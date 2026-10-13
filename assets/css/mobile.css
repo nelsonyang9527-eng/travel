@@ -73,3 +73,92 @@ html body main .event-card .links{padding-top:12px;border-top:1px solid var(--li
 html body main .trip-card .trip-body{padding:22px}
 html body main .trip-card .button{border-radius:10px;font-weight:650}
 @media(max-width:600px){html body main .event-number{left:13px;top:20px;width:26px;height:26px}html body main .event-card h3{font-size:16px}html body main .event-card p{font-size:14px}html body main .trip-body{padding:20px}}
+
+
+/* Legacy timeline cards use the same outer geometry as shared event cards. */
+html body main .card.trip-day .day-timeline {
+  width:100%;
+  min-width:0;
+  padding:0!important;
+  margin:12px 0!important;
+}
+html body main .card.trip-day .day-timeline > li,
+html body main .card.trip-day.itinerary-merged .day-timeline > li {
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  margin:12px 0!important;
+  padding:18px 14px 18px 52px!important;
+  box-sizing:border-box;
+  position:relative;
+  overflow-wrap:anywhere;
+  border:1px solid var(--line)!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  box-shadow:0 4px 16px #23443806!important;
+}
+html body main .card.trip-day .day-timeline > li .tl-row {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 44px!important;
+  grid-template-rows:auto auto;
+  column-gap:10px!important;
+  row-gap:4px!important;
+  width:100%!important;
+  max-width:100%;
+  min-width:0;
+  min-height:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  box-sizing:border-box;
+}
+html body main .card.trip-day .day-timeline .tl-time-block,
+html body main .card.trip-day .day-timeline .tl-copy {
+  grid-column:1!important;
+  min-width:0!important;
+  max-width:100%;
+  padding:0!important;
+}
+html body main .card.trip-day .day-timeline .tl-time-block {grid-row:1!important}
+html body main .card.trip-day .day-timeline .tl-copy {grid-row:2!important}
+html body main .card.trip-day .day-timeline .tl-badges {
+  position:static!important;
+  display:flex!important;
+  flex-wrap:wrap;
+  gap:5px;
+  margin:0 0 6px!important;
+}
+html body main .card.trip-day .day-timeline .tl-time {
+  font-size:19px!important;
+  font-weight:750!important;
+  line-height:1.4!important;
+}
+html body main .card.trip-day .day-timeline .tl-title {
+  font-size:16px!important;
+  line-height:1.6!important;
+  overflow-wrap:anywhere;
+}
+html body main .card.trip-day .day-timeline .tl-inline-detail,
+html body main .card.trip-day .day-timeline .tl-dest {
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+html body main .card.trip-day .day-timeline .tl-map-btn,
+html body main .card.trip-day .day-timeline .tl-ticket-btn,
+html body main .card.trip-day .day-timeline .tl-exchange-btn {
+  grid-column:2!important;
+  grid-row:1 / span 2!important;
+  justify-self:end!important;
+  align-self:center!important;
+  margin:0!important;
+  min-width:44px!important;
+  min-height:44px!important;
+}
+@media(min-width:601px) {
+  html body main .card.trip-day .day-timeline > li,
+  html body main .card.trip-day.itinerary-merged .day-timeline > li {
+    padding:20px 18px 20px 58px!important;
+  }
+}
