@@ -57,3 +57,56 @@ html body main .trip-day .day-timeline .tl-time{color:var(--accent)!important;fo
 html body main .trip-day .day-timeline .tl-map-btn,html body main .rec-map-btn{background:#edf4f0!important;color:#356b62!important}
 html body main .trip-day .rec-details summary{color:#356b62}
 html body main .toprow h2{font-size:19px}
+
+
+/* Keep Hoi An and other day activity cards within one consistent column. */
+html body main .trip-day .day-timeline {
+  width:100%;
+  min-width:0;
+}
+html body main .trip-day .day-timeline > li {
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+  margin-left:0!important;
+  margin-right:0!important;
+  overflow-wrap:anywhere;
+}
+html body main .trip-day .day-timeline .tl-row {
+  width:100%!important;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 44px!important;
+  gap:10px!important;
+}
+html body main .trip-day .day-timeline .tl-time-block,
+html body main .trip-day .day-timeline .tl-copy {
+  grid-column:1!important;
+  min-width:0!important;
+  max-width:100%;
+}
+html body main .trip-day .day-timeline .tl-time-block {grid-row:1!important}
+html body main .trip-day .day-timeline .tl-copy {grid-row:2!important}
+html body main .trip-day .day-timeline .tl-badges {
+  position:static!important;
+  display:flex!important;
+  flex-wrap:wrap;
+  margin:0 0 6px;
+}
+html body main .trip-day .day-timeline .tl-map-btn,
+html body main .trip-day .day-timeline .tl-ticket-btn,
+html body main .trip-day .day-timeline .tl-exchange-btn {
+  grid-column:2!important;
+  grid-row:1 / span 2!important;
+  justify-self:end;
+  align-self:center!important;
+  margin:0!important;
+}
+html body main .trip-day .day-timeline .tl-title,
+html body main .trip-day .day-timeline .tl-inline-detail {
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
