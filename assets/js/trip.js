@@ -65,7 +65,7 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
       if(event.mapQuery||event.location||event.links?.length){const actions=element('div',undefined,'links');const query=event.mapQuery||event.location;if(query)actions.append(mapButtons(query,event.links));for(const link of otherLinks(event.links))actions.append(publicLink(link.label,link.url));if(actions.childElementCount)item.append(actions);}
       card.append(item);
     }
-    const links=element('div',undefined,'links');for(const link of day.links||[]){const u=new URL(link.url);if(u.hostname==='www.google.com'&&u.pathname.startsWith('/maps/')){const query=u.searchParams.get('query');if(query){const group=element('div',undefined,'day-map-item');group.append(element('span',link.label,'day-map-name'),mapButtons(query,[link]));links.append(group);continue;}}links.append(publicLink(link.label,link.url));}if(links.childElementCount){const actions=element('aside',undefined,'day-links');actions.append(element('h3','地點與導航'),links);card.append(actions);}root.append(card);
+    root.append(card);
   }
   const notes=document.querySelector('#notes');for(const note of trip.notes||[])notes.append(element('li',note));
   select('all');
