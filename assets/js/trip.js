@@ -1,7 +1,7 @@
 import {loadJSON, tripStatus, statusLabels, element, publicLink} from './travel.js';
 const labels={planned:'已規劃',tentative:'待確認',confirmed:'已確認',cancelled:'已取消'};
 const root=document.querySelector('#days');
-loadJSON('trip.json?v=20261014-gemstay').then(trip=>{
+loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
   document.title=`${trip.title}｜travel`;
   document.querySelector('#title').textContent=trip.title;
   document.querySelector('#summary').textContent=trip.summary;
