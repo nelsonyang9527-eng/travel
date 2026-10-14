@@ -62,7 +62,7 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
       if(event.start){const time=element('time',new Intl.DateTimeFormat('zh-TW',{timeZone:event.timezone||trip.timezone,hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(event.start)));time.dateTime=event.start;heading.prepend(time)}else{heading.prepend(element('span','彈性安排','event-time-flexible'))}
       if(event.notes)item.append(element('p',event.notes));
       if(event.location)item.append(element('p',`地點：${event.location}`));
-      if(event.location||event.links?.length){const actions=element('div',undefined,'links');const isFlight=/\b(?:TPE|PUS)\b.*(?:→|->).*\b(?:TPE|PUS)\b/.test(event.title);if(!isFlight&&event.location?.includes('｜')&&/\d/.test(event.location))actions.append(mapButtons(event.location,event.links));for(const link of otherLinks(event.links))actions.append(publicLink(link.label,link.url));if(actions.childElementCount)item.append(actions);}
+      if(event.location||event.mapQuery||event.links?.length){const actions=element('div',undefined,'links');const isFlight=/\b(?:TPE|PUS)\b.*(?:→|->).*\b(?:TPE|PUS)\b/.test(event.title);const query=event.mapQuery||(event.location?.includes('｜')&&/\d/.test(event.location)?event.location:null);if(!isFlight&&query)actions.append(mapButtons(query,event.links));for(const link of otherLinks(event.links))actions.append(publicLink(link.label,link.url));if(actions.childElementCount)item.append(actions);}
       card.append(item);
     }
     root.append(card);
