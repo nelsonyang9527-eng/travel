@@ -1,6 +1,32 @@
 import {loadJSON, tripStatus, statusLabels, element, publicLink} from './travel.js';
 const labels={planned:'已規劃',tentative:'待確認',confirmed:'已確認',cancelled:'已取消'};
 const root=document.querySelector('#days');
+const mapLinkTypes=[
+  {key:'naver',label:'NAVER Map',short:'N',base:'https://map.naver.com/p/search/'},
+  {key:'google',label:'Google Maps',short:'G',base:'https://www.google.com/maps/search/?api=1&query='}
+];
+function mapButtons(query,links=[]){
+  const maps=element('div',undefined,'map-shortcuts');
+  const nativeLink=links.find(link=>new URL(link.url).hostname==='map.naver.com');
+  const googleLink=links.find(link=>new URL(link.url).hostname==='www.google.com'&&new URL(link.url).pathname.startsWith('/maps/'));
+  for(const map of mapLinkTypes){
+    const url=map.key==='naver'?nativeLink?.url||map.base+encodeURIComponent(query):googleLink?.url||map.base+encodeURIComponent(query);
+    const anchor=publicLink(map.label,url);
+    anchor.className='map-shortcut map-shortcut-'+map.key;
+    anchor.textContent=map.short;
+    anchor.title=map.label+'｜開啟地圖';
+    anchor.setAttribute('aria-label',map.label+'｜開啟地圖');
+    maps.append(anchor);
+  }
+  return maps;
+}
+function otherLinks(links=[]){
+  return links.filter(link=>{
+    const u=new URL(link.url);
+    return u.hostname!=='map.naver.com'&&!(u.hostname==='www.google.com'&&u.pathname.startsWith('/maps/'));
+  });
+}
+
 loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
   document.title=`${trip.title}｜travel`;
   document.querySelector('#title').textContent=trip.title;
@@ -36,10 +62,10 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
       if(event.start){const time=element('time',new Intl.DateTimeFormat('zh-TW',{timeZone:event.timezone||trip.timezone,hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(event.start)));time.dateTime=event.start;heading.prepend(time)}else{heading.prepend(element('span','彈性安排','event-time-flexible'))}
       if(event.notes)item.append(element('p',event.notes));
       if(event.location)item.append(element('p',`地點：${event.location}`));
-      if(event.links?.length){const actions=element('div',undefined,'links');for(const link of event.links)actions.append(publicLink(link.label,link.url));item.append(actions);}
+      if(event.mapQuery||event.location||event.links?.length){const actions=element('div',undefined,'links');const query=event.mapQuery||event.location;if(query)actions.append(mapButtons(query,event.links));for(const link of otherLinks(event.links))actions.append(publicLink(link.label,link.url));if(actions.childElementCount)item.append(actions);}
       card.append(item);
     }
-    const links=element('div',undefined,'links');for(const link of day.links||[])links.append(publicLink(link.label,link.url));if(links.childElementCount){const actions=element('aside',undefined,'day-links');actions.append(element('h3','地點與導航'),links);card.append(actions);}root.append(card);
+    const links=element('div',undefined,'links');for(const link of day.links||[]){const u=new URL(link.url);if(u.hostname==='www.google.com'&&u.pathname.startsWith('/maps/')){const query=u.searchParams.get('query');if(query){const group=element('div',undefined,'day-map-item');group.append(element('span',link.label,'day-map-name'),mapButtons(query,[link]));links.append(group);continue;}}links.append(publicLink(link.label,link.url));}if(links.childElementCount){const actions=element('aside',undefined,'day-links');actions.append(element('h3','地點與導航'),links);card.append(actions);}root.append(card);
   }
   const notes=document.querySelector('#notes');for(const note of trip.notes||[])notes.append(element('li',note));
   select('all');
