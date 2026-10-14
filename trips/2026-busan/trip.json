@@ -72,15 +72,23 @@
       "events": [
         {
           "id": "2026-10-29-01",
-          "title": "睡飽自然醒，西面吃午餐。",
+          "title": "早餐後前往釜山電影體驗博物館。",
           "notes": "",
           "status": "planned"
         },
         {
           "id": "2026-10-29-02",
-          "title": "釜山電影體驗博物館＋CINE 博物館 票券已安排",
-          "notes": "",
-          "status": "planned"
+          "title": "釜山電影體驗博物館＋CINE 博物館（同一地點）",
+          "notes": "10:00 入館（韓國時間）；票券已安排。",
+          "status": "planned",
+          "start": "2026-10-29T10:00:00+09:00",
+          "location": "부산영화체험박물관｜부산광역시 중구 대청로126번길 12",
+          "links": [
+            {
+              "label": "NAVER Map｜博物館位置",
+              "url": "https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%EC%98%81%ED%99%94%EC%B2%B4%ED%97%98%EB%B0%95%EB%AC%BC%EA%B4%80%20%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8C%80%EC%B2%AD%EB%A1%9C126%EB%B2%88%EA%B8%B8%2012"
+            }
+          ]
         },
         {
           "id": "2026-10-29-03",
