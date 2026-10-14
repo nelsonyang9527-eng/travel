@@ -162,3 +162,36 @@ html body main .card.trip-day .day-timeline .tl-exchange-btn {
     padding:20px 18px!important;
   }
 }
+
+
+/* Compact, accessible map shortcuts for the shared itinerary renderer. */
+html body main .event-card .map-shortcuts {
+  display:inline-flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+html body main .event-card .map-shortcut {
+  display:inline-grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  min-height:44px;
+  padding:0;
+  border:1px solid #dce7df;
+  border-radius:12px;
+  background:#edf4f0;
+  color:#286d5d;
+  font-size:17px;
+  font-weight:800;
+  line-height:1;
+  text-decoration:none;
+}
+html body main .event-card .map-shortcut-google {
+  background:#edf3fc;
+  border-color:#dce6f8;
+  color:#295eae;
+}
+html body main .event-card .map-shortcut:focus-visible {
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
