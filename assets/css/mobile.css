@@ -20,8 +20,8 @@ html body main a:focus-visible,html body main button:focus-visible{outline:3px s
 @media(max-width:600px){:root{--page-gutter:16px;--nav-height:78px}html body main{padding-top:8px}html body main .site-nav{gap:8px;margin-bottom:24px;padding:8px 0 12px}html body main .site-nav .brand{font-size:20px;gap:6px}html body main .nav-links a{padding:8px 10px;font-size:13px}html body main h1{font-size:28px}html body main .day-card,html body main .card,html body main .notes{padding:18px}html body main .event-card{padding:15px}html body main .tabs,html body main .day-tabs-wrap{border-radius:12px}html body main .tab,html body main .day-tab{padding:9px 12px}html body main .trip-body .trip-meta{flex-wrap:wrap;gap:4px 10px}html body main .trip-body .trip-meta .dates{margin:0}html body main .event-card p{font-size:15px}html body main .links .button{flex-grow:1;text-align:center}html body main header{margin-bottom:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 html body main [hidden]{display:none!important}
-html body main .card.trip-day{padding:24px!important}
-@media(max-width:600px){html body main .card.trip-day{padding:18px!important}}
+/* Historical trip day sections contain their own full-width event cards. */
+html body main .card.trip-day{padding:0!important}
 /* Archive links follow the same available card width as the overview. */
 html body main .timeline{margin-left:0;padding-left:0;border-left:0}
 html body main .timeline .trip-card{width:100%;max-width:none;overflow:hidden}
