@@ -33,7 +33,8 @@
           "status": "confirmed",
           "start": "2026-10-28T16:50:00+08:00",
           "end": "2026-10-28T20:00:00+09:00",
-          "timezone": "Asia/Taipei"
+          "timezone": "Asia/Taipei",
+          "mapQuery": "김해국제공항 국제선청사"
         },
         {
           "id": "2026-10-28-04",
@@ -52,17 +53,8 @@
           "id": "2026-10-28-06",
           "title": "晚上｜西面韓式燒肉",
           "notes": "吃完視體力簡單逛西面商圈。",
-          "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 西面",
-          "url": "https://www.google.com/maps/search/?api=1&query=Seomyeon+Busan"
-        },
-        {
-          "label": "📍 金海機場",
-          "url": "https://www.google.com/maps/search/?api=1&query=Gimhae+International+Airport"
+          "status": "planned",
+          "mapQuery": "서면 부산"
         }
       ]
     },
@@ -74,7 +66,8 @@
           "id": "2026-10-29-01",
           "title": "早餐後前往釜山電影體驗博物館。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "부산영화체험박물관"
         },
         {
           "id": "2026-10-29-02",
@@ -94,7 +87,8 @@
           "id": "2026-10-29-03",
           "title": "田浦、西面商圈逛街，中間安排咖啡店休息。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "전포카페거리 부산"
         },
         {
           "id": "2026-10-29-04",
@@ -106,17 +100,8 @@
           "id": "2026-10-29-05",
           "title": "回飯店休息。",
           "notes": "",
-          "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 田浦咖啡街",
-          "url": "https://www.google.com/maps/search/?api=1&query=Jeonpo+Cafe+Street+Busan"
-        },
-        {
-          "label": "📍 Head SPA 搜尋",
-          "url": "https://www.google.com/maps/search/?api=1&query=Head+Spa+Seomyeon+Busan"
+          "status": "planned",
+          "mapQuery": "Gem Stay Seomyeon 부산"
         }
       ]
     },
@@ -130,13 +115,20 @@
           "notes": "請提早抵達集合點。",
           "status": "planned",
           "start": "2026-10-30T08:30:00+09:00",
-          "end": "2026-10-30T08:40:00+09:00"
+          "end": "2026-10-30T08:40:00+09:00",
+          "mapQuery": "서면역 4번출구 부산"
         },
         {
           "id": "2026-10-30-02",
           "title": "慶州 VIP 小團文化遺產＆自然一日遊 已安排",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "links": [
+            {
+              "label": "🎫 Klook 行程",
+              "url": "https://www.klook.com/zh-TW/activity/194604-gyeongju-vip-small-group-heritage-nature-day-tour/"
+            }
+          ]
         },
         {
           "id": "2026-10-30-03",
@@ -148,17 +140,8 @@
           "id": "2026-10-30-04",
           "title": "回西面後宵夜／休息。",
           "notes": "",
-          "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 西面站 4 號出口",
-          "url": "https://www.google.com/maps/search/?api=1&query=Seomyeon+Station+Exit+4+Busan"
-        },
-        {
-          "label": "🎫 Klook 行程",
-          "url": "https://www.klook.com/zh-TW/activity/194604-gyeongju-vip-small-group-heritage-nature-day-tour/"
+          "status": "planned",
+          "mapQuery": "서면 부산"
         }
       ]
     },
@@ -176,13 +159,15 @@
           "id": "2026-10-31-02",
           "title": "下午｜廣安里海水浴場附近散步。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "광안리해수욕장 부산"
         },
         {
           "id": "2026-10-31-03",
           "title": "咖啡店／逛街／周邊景點，保留休息時間。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "광안리해수욕장 부산"
         },
         {
           "id": "2026-10-31-04",
@@ -195,23 +180,20 @@
           "title": "19:00｜廣安里 M 無人機燈光秀（第一場）",
           "notes": "官網冬季（10月至2月）每週六 19:00、21:00 各一場，每場約 10～12 分鐘，免費於廣安里海水浴場觀賞。優先看 19:00 第一場；21:00 為備選。遇天候或通訊因素可能延後或取消，當天出發前查看官網公告。",
           "status": "confirmed",
-          "start": "2026-10-31T19:00:00+09:00"
+          "start": "2026-10-31T19:00:00+09:00",
+          "mapQuery": "광안리해수욕장 부산",
+          "links": [
+            {
+              "label": "官方｜M 無人機燈光秀公告",
+              "url": "https://www.gwangallimdrone.co.kr/notice"
+            }
+          ]
         },
         {
           "id": "2026-10-31-06",
           "title": "看完表演後慢慢逛，再返回西面。",
           "notes": "",
           "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 廣安里海水浴場",
-          "url": "https://www.google.com/maps/search/?api=1&query=Gwangalli+Beach+Busan"
-        },
-        {
-          "label": "官方｜M 無人機燈光秀公告",
-          "url": "https://www.gwangallimdrone.co.kr/notice"
         }
       ]
     },
@@ -223,7 +205,8 @@
           "id": "2026-11-01-01",
           "title": "上午｜睡飽再出門，往海雲台／青沙浦方向移動。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "해운대해수욕장 부산"
         },
         {
           "id": "2026-11-01-02",
@@ -231,37 +214,21 @@
           "notes": "",
           "status": "planned",
           "start": "2026-11-01T13:30:00+09:00",
-          "end": "2026-11-01T14:00:00+09:00"
+          "end": "2026-11-01T14:00:00+09:00",
+          "mapQuery": "해운대블루라인파크 미포정거장 부산"
         },
         {
           "id": "2026-11-01-03",
           "title": "列車前後安排海邊散步、咖啡，行程保持悠閒。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "청사포 부산"
         },
         {
           "id": "2026-11-01-04",
           "title": "其餘時間自由安排，不另外塞跨區景點。",
           "notes": "",
           "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 海雲台",
-          "url": "https://www.google.com/maps/search/?api=1&query=Haeundae+Beach+Busan"
-        },
-        {
-          "label": "📍 青沙浦",
-          "url": "https://www.google.com/maps/search/?api=1&query=Cheongsapo+Busan"
-        },
-        {
-          "label": "📍 南浦洞",
-          "url": "https://www.google.com/maps/search/?api=1&query=Nampo-dong+Busan"
-        },
-        {
-          "label": "📍 影島",
-          "url": "https://www.google.com/maps/search/?api=1&query=Yeongdo+Busan"
         }
       ]
     },
@@ -273,13 +240,15 @@
           "id": "2026-11-02-01",
           "title": "睡飽、整理行李，Check-out／寄放行李。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "Gem Stay Seomyeon 부산"
         },
         {
           "id": "2026-11-02-02",
           "title": "西面吃午餐。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "서면 부산"
         },
         {
           "id": "2026-11-02-03",
@@ -301,25 +270,29 @@
           "id": "2026-11-02-05",
           "title": "約 15:00～16:00 結束，西面附近逛街、休息。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "서면 부산"
         },
         {
           "id": "2026-11-02-06",
           "title": "回飯店拿行李。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "Gem Stay Seomyeon 부산"
         },
         {
           "id": "2026-11-02-07",
           "title": "約 17:00～17:30｜前往金海機場",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "김해국제공항 국제선청사"
         },
         {
           "id": "2026-11-02-08",
           "title": "機場晚餐／逛免稅店。",
           "notes": "",
-          "status": "planned"
+          "status": "planned",
+          "mapQuery": "김해국제공항 국제선청사"
         },
         {
           "id": "2026-11-02-09",
@@ -328,19 +301,14 @@
           "status": "confirmed",
           "start": "2026-11-02T20:50:00+09:00",
           "end": "2026-11-02T22:30:00+08:00",
-          "timezone": "Asia/Seoul"
+          "timezone": "Asia/Seoul",
+          "mapQuery": "김해국제공항 국제선청사"
         },
         {
           "id": "2026-11-02-10",
           "title": "抵達台灣 → 回家。",
           "notes": "22:30 台灣時間抵達桃園。",
           "status": "planned"
-        }
-      ],
-      "links": [
-        {
-          "label": "📍 金海機場",
-          "url": "https://www.google.com/maps/search/?api=1&query=Gimhae+International+Airport"
         }
       ]
     }
