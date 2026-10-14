@@ -7,7 +7,7 @@
   "end": "2026-11-02",
   "summary": "西面、慶州、廣安里與海雲台；一天一個主要區域，保留咖啡與休息時間。",
   "notes": [
-    "住宿：西面站附近。",
+    "住宿：Gem Stay Seomyeon（젬스테이 서면），釜山鎮區中央大路 752。",
     "不趕行程，每天睡飽再出門。",
     "優先博物館、展覽、表演、SPA、按摩與美食。",
     "除了慶州跟團之外，以自由行為主。",
@@ -37,15 +37,28 @@
         },
         {
           "id": "2026-10-28-04",
-          "title": "抵達金海機場 → 前往西面飯店。",
-          "notes": "20:00 韓國時間抵達後，辦理入境並前往飯店。",
-          "status": "planned"
+          "title": "抵達金海機場 → 搭 Uber 前往 Gem Stay Seomyeon",
+          "notes": "20:00（韓國時間）抵達後，完成入境、領取行李，再叫 Uber 前往飯店；出發時間依實際通關情況。",
+          "status": "planned",
+          "location": "Gem Stay Seomyeon（젬스테이 서면）｜부산광역시 부산진구 중앙대로 752",
+          "links": [
+            {
+              "label": "NAVER Map｜飯店位置",
+              "url": "https://map.naver.com/p/search/%EC%A0%AC%EC%8A%A4%ED%85%8C%EC%9D%B4%20%EC%84%9C%EB%A9%B4%20%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20752"
+            }
+          ]
         },
         {
           "id": "2026-10-28-05",
-          "title": "Check-in、放行李。",
-          "notes": "",
-          "status": "planned"
+          "title": "Gem Stay Seomyeon｜Check-in、放行李",
+          "notes": "飯店地址：부산광역시 부산진구 중앙대로 752（752 Jungang-daero, Busanjin-gu, Busan 47245）",
+          "status": "planned",
+          "links": [
+            {
+              "label": "NAVER Map｜飯店位置",
+              "url": "https://map.naver.com/p/search/%EC%A0%AC%EC%8A%A4%ED%85%8C%EC%9D%B4%20%EC%84%9C%EB%A9%B4%20%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20752"
+            }
+          ]
         },
         {
           "id": "2026-10-28-06",
