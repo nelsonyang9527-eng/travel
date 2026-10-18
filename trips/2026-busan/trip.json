@@ -297,10 +297,363 @@
   ],
   "pending": [
     {
-      "id": "busan-dalmaji-eel",
+      "id": "old-mansion",
+      "title": "Old Mansion｜韓式烤肉",
+      "area": "西面・田浦",
+      "notes": "首選；雙人豬五花＋豬頸肉套餐參考 ₩58,000。營業與訂位方式出發前確認。",
+      "location": "전포대로209번길 17-6",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%98%AC%EB%93%9C%EB%A7%A8%EC%85%98%20%EC%A0%84%ED%8F%AC%EB%8C%80%EB%A1%9C209%EB%B2%88%EA%B8%B8%2017-6"
+        }
+      ],
+      "days": [
+        "2026-10-28",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "gohasoon",
+      "title": "Gohasoon｜韓式烤肉",
+      "area": "西面・田浦",
+      "notes": "首選；店員代烤，味噌湯請做不辣，避開辣拌冷麵。",
+      "location": "서전로 38",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EA%B3%A0%ED%95%98%EC%88%9C%20%EC%84%9C%EC%A0%84%EB%A1%9C%2038"
+        }
+      ],
+      "days": [
+        "2026-10-28",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "sewoldam",
+      "title": "Sewoldam 世月談｜韓式烤肉",
+      "area": "西面・田浦",
+      "notes": "首選；店員代烤，豬頸肉及韓牛生拌肉可選。避免辣泡菜鍋；價格待確認。",
+      "location": "전포대로200번길 19",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%84%B8%EC%9B%94%EB%8B%B4%20%EC%A0%84%ED%8F%AC%EB%8C%80%EB%A1%9C200%EB%B2%88%EA%B8%B8%2019"
+        }
+      ],
+      "days": [
+        "2026-10-28",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "seocho-galbi",
+      "title": "Seocho Galbi｜炭烤醬排骨",
+      "area": "西面・田浦",
+      "notes": "釜田站附近老店；甜醬油醃豬排，不辣；據提供資料週一休息。",
+      "location": "부산진구 동성로 151",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%B4%88%EA%B0%88%EB%B9%84%20%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC%20%EB%8F%99%EC%84%B1%EB%A1%9C%20151"
+        }
+      ],
+      "days": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "busandaek",
+      "title": "釜山宅 本店（부산댁 서면본점）",
+      "area": "西面・田浦",
+      "notes": "店員代烤綜合豬肉盤；晚餐可能候位。不吃辣醬、辣蔥絲或辣拌冷麵。",
+      "location": "부산 부산진구 동천로107번길 14",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/FGoeWrpe"
+        }
+      ],
+      "days": [
+        "2026-10-28",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "gansan",
+      "title": "無招牌生牛肉店（간판없는집）",
+      "area": "西面・田浦",
+      "notes": "生牛肉備選，Mungtigi 供應日及售完狀態需先確認；醬料請不加辣醬。",
+      "location": "서전로 16-1",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/entry/place/1340175931"
+        }
+      ],
+      "days": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "nangman",
+      "title": "浪漫 Mungtigi｜生牛肉",
+      "area": "蓮山",
+      "notes": "生牛肉備選；需特別繞往蓮山站附近，生食與營業日先確認。",
+      "location": "연제구 고분로13번길 75",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EB%82%AD%EB%A7%8C%EB%AD%89%ED%8B%B0%EA%B8%B0%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EA%B3%A0%EB%B6%84%EB%A1%9C13%EB%B2%88%EA%B8%B8%2075"
+        }
+      ]
+    },
+    {
+      "id": "jogae-daepyo",
+      "title": "貝類代表 廣安本店（조개대표）",
+      "area": "廣安里",
+      "notes": "首選；烤貝吃到飽，參考每人 ₩37,000；別館有橋景，海鮮泡麵先確認辣度。",
+      "location": "광안리 조개대표 광안본점",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%A1%B0%EA%B0%9C%EB%8C%80%ED%91%9C%20%EA%B4%91%EC%95%88%EB%B3%B8%EC%A0%90"
+        }
+      ],
+      "days": [
+        "2026-10-31"
+      ]
+    },
+    {
+      "id": "jigeum-jogae",
+      "title": "現在貝類（지금조개）",
+      "area": "廣安里",
+      "notes": "炭烤貝類與廣安大橋景；章魚泡麵可能辣，改刀切麵。",
+      "location": "광안로61번길 60",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%A7%80%EA%B8%88%EC%A1%B0%EA%B0%9C%20%EA%B4%91%EC%95%88%EB%A1%9C61%EB%B2%88%EA%B8%B8%2060"
+        }
+      ],
+      "days": [
+        "2026-10-31"
+      ]
+    },
+    {
+      "id": "hwangnyeongsan",
+      "title": "荒嶺山展望台（황령산전망대）",
+      "area": "廣安里周邊",
+      "notes": "夜景候選，但需要另外上山交通；不視為海灘步行景點，勿影響 19:00 無人機表演。",
+      "location": "부산 남구",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/FswkKkTN"
+        }
+      ],
+      "days": [
+        "2026-10-31"
+      ]
+    },
+    {
+      "id": "suminine",
+      "title": "秀敏家（수민이네）｜烤貝",
+      "area": "海雲台・青沙浦",
+      "notes": "青沙浦炭烤貝類；適合膠囊列車前後，泡麵可問是否能不辣。",
+      "location": "청사포로58번길 118",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%88%98%EB%AF%BC%EC%9D%B4%EB%84%A4%20%EC%B2%AD%EC%82%AC%ED%8F%AC%EB%A1%9C58%EB%B2%88%EA%B8%B8%20118"
+        }
+      ],
+      "days": [
+        "2026-11-01"
+      ]
+    },
+    {
+      "id": "busan-eel",
       "title": "海雲台烤鰻魚（店名待確認）",
-      "notes": "鹽烤、醬油與辣味三種口味；可考慮韓式冷麵。用餐日期、營業時間待確認。",
-      "location": "부산광역시 해운대구 달맞이길 22, 1층"
+      "area": "海雲台・青沙浦",
+      "notes": "原待排名單；優先鹽烤、醬油口味，不吃辣味。店名及營業資訊待確認。",
+      "location": "부산광역시 해운대구 달맞이길 22, 1층",
+      "days": [
+        "2026-11-01"
+      ]
+    },
+    {
+      "id": "sky-capsule",
+      "title": "海雲台天空膠囊列車（尾浦－青沙浦）",
+      "area": "海雲台・青沙浦",
+      "notes": "已排定 11/01 13:30–14:00；此處僅提供附近導航，不另新增預約。",
+      "location": "해운대블루라인파크 미포정거장",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%ED%95%B4%EC%9A%B4%EB%8C%80%EB%B8%94%EB%A3%A8%EB%9D%BC%EC%9D%B8%ED%8C%8C%ED%81%AC%20%EB%AF%B8%ED%8F%AC%EC%A0%95%EA%B1%B0%EC%9E%A5"
+        }
+      ],
+      "days": [
+        "2026-11-01"
+      ]
+    },
+    {
+      "id": "songdo-shellfish",
+      "title": "岩南公園烤貝帳篷",
+      "area": "松島",
+      "notes": "地方風味烤貝攤；座位可能較擁擠，建議搭車前往；不屬西面／南浦步行範圍。",
+      "location": "암남공원 조개구이 포장마차 숙이네",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%95%94%EB%82%A8%EA%B3%B5%EC%9B%90%20%EC%A1%B0%EA%B0%9C%EA%B5%AC%EC%9D%B4%20%ED%8F%AC%EC%9E%A5%EB%A7%88%EC%B0%A8%20%EC%88%99%EC%9D%B4%EB%84%A4"
+        }
+      ]
+    },
+    {
+      "id": "songdo-1913",
+      "title": "松島1913（송도1913）",
+      "area": "松島",
+      "notes": "松島餐廳備選，可與岩南公園同區考慮；菜色及營業時間待確認。",
+      "location": "부산 서구 등대로 11",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/x9uN90QX"
+        }
+      ]
+    },
+    {
+      "id": "arte",
+      "title": "ARTE MUSEUM Busan",
+      "area": "影島",
+      "notes": "沉浸式藝術館；提供資訊為 10:00–20:00、最晚 19:00 入場，出發前再次確認。",
+      "location": "부산 영도 아르떼뮤지엄",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%20%EB%B6%80%EC%82%B0%20%EC%98%81%EB%8F%84"
+        }
+      ]
+    },
+    {
+      "id": "huinnyeoul",
+      "title": "白淺灘文化村（흰여울문화마을）",
+      "area": "影島",
+      "notes": "與 ARTE MUSEUM 可同區安排；不是電影博物館旁的步行景點，需另規劃交通。",
+      "location": "흰여울문화마을",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%ED%9D%B0%EC%97%AC%EC%9A%B8%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84"
+        }
+      ]
+    },
+    {
+      "id": "cheongsong-tofu",
+      "title": "青松石磨嫩豆腐",
+      "area": "梵魚寺・東萊",
+      "notes": "白色不辣嫩豆腐鍋＋蔥煎餅；據提供資料 08:00–21:30。",
+      "location": "청룡예전로 11",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%B2%AD%EC%86%A1%EB%A7%B7%EB%8F%8C%EC%88%9C%EB%91%90%EB%B6%80%20%EC%B2%AD%EB%A3%A1%EC%98%88%EC%A0%84%EB%A1%9C%2011"
+        }
+      ]
+    },
+    {
+      "id": "geumjeong",
+      "title": "金井山莊（금정산장）",
+      "area": "梵魚寺・東萊",
+      "notes": "海鮮蔥餅、山菜拌飯；辣椒醬分開上。",
+      "location": "범어사 금정산장",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EA%B8%88%EC%A0%95%EC%82%B0%EC%9E%A5%20%EB%B2%94%EC%96%B4%EC%82%AC"
+        }
+      ]
+    },
+    {
+      "id": "cheonggukjang",
+      "title": "知名清麴醬店（소문난청국장）",
+      "area": "梵魚寺・東萊",
+      "notes": "發酵豆醬定食；味道濃郁，避免可能辣的涼拌蛤蜊；價格待確認。",
+      "location": "금정구 청룡로 43",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EC%86%8C%EB%AC%B8%EB%82%9C%EC%B2%AD%EA%B5%AD%EC%9E%A5%20%EA%B8%88%EC%A0%95%EA%B5%AC%20%EC%B2%AD%EB%A3%A1%EB%A1%9C%2043"
+        }
+      ]
+    },
+    {
+      "id": "dongnae-pajeon",
+      "title": "東萊奶奶蔥餅（동래할매파전）",
+      "area": "梵魚寺・東萊",
+      "notes": "厚式海鮮蔥餅；據提供資料週一公休，價格待確認。",
+      "location": "명륜로94번길 43-10",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EB%8F%99%EB%9E%98%ED%95%A0%EB%A7%A4%ED%8C%8C%EC%A0%84%20%EB%AA%85%EB%A5%9C%EB%A1%9C94%EB%B2%88%EA%B8%B8%2043-10"
+        }
+      ]
+    },
+    {
+      "id": "beomeosa",
+      "title": "梵魚寺（범어사）",
+      "area": "梵魚寺・東萊",
+      "notes": "賞楓候選；需另排半天，楓況出發前確認。",
+      "location": "범어사",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://map.naver.com/p/search/%EB%B2%94%EC%96%B4%EC%82%AC"
+        }
+      ]
+    },
+    {
+      "id": "waveon",
+      "title": "Waveon Coffee（웨이브온 커피）",
+      "area": "機張",
+      "notes": "海景咖啡廳，遠離海雲台主路線；適合另安排機張半日。",
+      "location": "부산 기장군 장안읍 해맞이로 286",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/GwmM0SKc"
+        }
+      ]
+    },
+    {
+      "id": "daege-manchan",
+      "title": "大蟹饗宴（대게만찬）",
+      "area": "機張",
+      "notes": "螃蟹餐廳；可與機張景點同區規劃，價格須當日確認。",
+      "location": "부산 기장군 기장읍 기장해안로 266 더이스트인부산 3층",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/FIOstYwk"
+        }
+      ]
+    },
+    {
+      "id": "north-port",
+      "title": "釜山港北港親水公園",
+      "area": "釜山站・北港",
+      "notes": "市區海港散步備選；與南浦／釜山站行程搭配需評估交通。",
+      "location": "부산 동구 이순신대로 164",
+      "links": [
+        {
+          "label": "NAVER Map",
+          "url": "https://naver.me/FVBk5rcl"
+        }
+      ]
     }
   ]
 }
