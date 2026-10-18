@@ -68,5 +68,24 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
     root.append(card);
   }
   const notes=document.querySelector('#notes');for(const note of trip.notes||[])notes.append(element('li',note));
+  if(trip.pending?.length){
+    const section=element('aside',undefined,'notes');
+    section.append(element('h2','待排清單'));
+    const list=element('ul');
+    for(const place of trip.pending){
+      const item=element('li');
+      item.append(element('strong',place.title));
+      if(place.notes)item.append(element('span',`｜${place.notes}`));
+      if(place.location)item.append(element('div',`地點：${place.location}`));
+      if(place.location){
+        const actions=element('div',undefined,'links');
+        actions.append(mapButtons(place.location,place.links||[]));
+        item.append(actions);
+      }
+      list.append(item);
+    }
+    section.append(list);
+    document.querySelector('aside.notes').before(section);
+  }
   select('all');
 }).catch(()=>{root.replaceChildren(element('p','行程資料暫時無法載入，請重新整理後再試。','empty'))});
