@@ -68,23 +68,42 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
     root.append(card);
   }
   const notes=document.querySelector('#notes');for(const note of trip.notes||[])notes.append(element('li',note));
-  if(trip.pending?.length){
-    const section=element('aside',undefined,'notes');
-    section.append(element('h2','待排清單'));
-    const list=element('ul');
-    for(const place of trip.pending){
-      const item=element('li');
-      item.append(element('strong',place.title));
-      if(place.notes)item.append(element('span',`｜${place.notes}`));
-      if(place.location)item.append(element('div',`地點：${place.location}`));
-      if(place.location){
-        const actions=element('div',undefined,'links');
-        actions.append(mapButtons(place.location,place.links||[]));
-        item.append(actions);
-      }
-      list.append(item);
+  const candidates=trip.pending||[];
+  function recommendation(place){
+    const wrap=element('div',undefined,'event-card');
+    wrap.append(element('strong',place.title));
+    if(place.notes)wrap.append(element('p',place.notes));
+    if(place.location)wrap.append(element('p','地點：'+place.location));
+    if(place.location||place.links?.length){
+      const actions=element('div',undefined,'links');
+      if(place.location)actions.append(mapButtons(place.location,place.links||[]));
+      for(const link of otherLinks(place.links||[]))actions.append(publicLink(link.label,link.url));
+      if(actions.childElementCount)wrap.append(actions);
     }
-    section.append(list);
+    return wrap;
+  }
+  for(const day of trip.days){
+    const nearby=candidates.filter(p=>p.days?.includes(day.date)&&p.id!=='sky-capsule');
+    if(!nearby.length)continue;
+    const card=[...root.children].find(el=>el.dataset.date===day.date);
+    const details=element('details',undefined,'nearby-recommendations');
+    const summary=element('summary','附近推薦 · '+nearby.length+' 個候選（非固定行程）');
+    details.append(summary);
+    for(const place of nearby)details.append(recommendation(place));
+    card.append(details);
+  }
+  const other=candidates.filter(p=>!p.days?.length);
+  if(other.length){
+    const section=element('aside',undefined,'notes');
+    section.append(element('h2','待排清單 · 其他區域'));
+    const groups=[...new Set(other.map(p=>p.area))];
+    for(const area of groups){
+      const places=other.filter(p=>p.area===area);
+      const details=element('details',undefined,'nearby-recommendations');
+      details.append(element('summary',area+' · '+places.length+' 個候選'));
+      for(const place of places)details.append(recommendation(place));
+      section.append(details);
+    }
     document.querySelector('aside.notes').before(section);
   }
   select('all');
