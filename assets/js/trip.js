@@ -63,6 +63,17 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
       if(event.notes)item.append(element('p',event.notes));
       if(event.location)item.append(element('p',`地點：${event.location}`));
       if(event.location||event.mapQuery||event.links?.length){const actions=element('div',undefined,'links');const isFlight=/\b(?:TPE|PUS)\b.*(?:→|->).*\b(?:TPE|PUS)\b/.test(event.title);const query=event.mapQuery||(event.location?.includes('｜')&&/\d/.test(event.location)?event.location:null);if(!isFlight&&query)actions.append(mapButtons(query,event.links));for(const link of otherLinks(event.links))actions.append(publicLink(link.label,link.url));if(actions.childElementCount)item.append(actions);}
+      const suggestions=(trip.pending||[]).filter(place=>place.days?.includes(day.date)&&place.id!=='sky-capsule'&&(
+        (/燒肉|晚餐|宵夜/.test(event.title)&&/烤肉|排骨|貝類|烤貝|生牛肉/.test(place.title))||
+        (/午餐|早餐/.test(event.title)&&/餐|烤|豆腐|蔥餅|鰻魚/.test(place.title))||
+        (/咖啡|散步|景點|自由安排|逛街/.test(event.title)&&!/烤肉|排骨|貝類|烤貝|生牛肉|鰻魚/.test(place.title))
+      ));
+      if(suggestions.length){
+        const details=element('details',undefined,'nearby-recommendations');
+        details.append(element('summary','可選推薦 · '+suggestions.length+' 個（尚未排定）'));
+        for(const place of suggestions)details.append(recommendation(place));
+        item.append(details);
+      }
       card.append(item);
     }
     root.append(card);
@@ -73,6 +84,7 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
     const wrap=element('div',undefined,'event-card');
     wrap.append(element('strong',place.title));
     if(place.notes)wrap.append(element('p',place.notes));
+    wrap.append(element('p','營業時間：'+(place.hours||'待確認，請以 NAVER Map 當日資訊為準')));
     if(place.location)wrap.append(element('p','地點：'+place.location));
     if(place.location||place.links?.length){
       const actions=element('div',undefined,'links');
@@ -87,7 +99,7 @@ loadJSON(`trip.json?v=${Date.now()}`).then(trip=>{
     if(!nearby.length)continue;
     const card=[...root.children].find(el=>el.dataset.date===day.date);
     const details=element('details',undefined,'nearby-recommendations');
-    const summary=element('summary','附近推薦 · '+nearby.length+' 個候選（非固定行程）');
+    const summary=element('summary','當日其他備選 · '+nearby.length+' 個（非固定行程）');
     details.append(summary);
     for(const place of nearby)details.append(recommendation(place));
     card.append(details);
